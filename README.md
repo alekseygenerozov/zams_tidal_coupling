@@ -15,9 +15,10 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 1) Tidal coupling constants are robust to changes in the numerical grid. Decreasing mesh_delta_coeff to 0.2 (which increases the number of grid points by a factor of a few), changes the tidal coupling constant by at most ~10%.
 
 2) The overlap integrals have to satisfy the following summation rule:<br/>
-  <img src="https://latex.codecogs.com/gif.latex?\Sigma\,Q^2=10\int_{0}^1\rho(r)r^4dr" /> <br/>
+  <img src="https://latex.codecogs.com/gif.latex?\Sigma\,Q^2=10\int_{0}^1\rho(r)r^4dr" />. <br/>
+  Rho is the stellar density and the sum on the left-hand side is over all of the modes.
   This summation is satisfied within 2% (and the agreement is often much better, especially for sub-solar models;    error_sum.csv enumerates the errors for all of the models).<br/>
-  where rho is the stellar denstiy; all masses and lengths are in units of the stellar mass and radius. 
+ 
 
 **Potential issues**
 
