@@ -16,7 +16,7 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 
 2) The overlap integrals have to satisfy the following summation rule:
   
-  <img src="https://latex.codecogs.com/gif.latex?\Sum Q^2 = 10 \int_{0}^1 rho(r) r^4 dr/>  
+  <img src="https://latex.codecogs.com/gif.latex?\Sum Q^2 = 10 \int_{0}^1 rho(r) r^4 dr"/>  
   
   This summation is generally satisfied to within 2% (and the agreement is often much better, especially for sub-          solar models--error_sum.csv lists the errors for all models). 
 
