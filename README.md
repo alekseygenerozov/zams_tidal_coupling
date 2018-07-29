@@ -11,9 +11,10 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 [tc2](https://github.com/alekseygenerozov/zams_tidal_coupling/blob/master/tc2.png)
 
 **Validation**
-1)Tidal coupling constants are robust to changes in the numerical grid. Decreasing mesh_delta_coeff to 0.2 (which increases the number of grid points by a factor of a few), changes the tidal coupling constant by at most ~10%.
 
-1) The overlap integrals have to satisfy the following summation rule:
+1) Tidal coupling constants are robust to changes in the numerical grid. Decreasing mesh_delta_coeff to 0.2 (which increases the number of grid points by a factor of a few), changes the tidal coupling constant by at most ~10%.
+
+2) The overlap integrals have to satisfy the following summation rule:
 
 $\Sum Q^2 10 \int_{0}^1 rho(r) r^4 dr$,
 
