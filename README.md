@@ -6,7 +6,7 @@ Note that Press&Teukolsky implicitly assume that the star is on a parabolic orbi
 
 The two plots below show how the tidal coupling constants vary with stellar mass. For comparison, I also plot the tidal coupling constants for n=3 and n=3/2 polytropes as dash-dotted, green lines.
 
-[tc1](https://github.com/alekseygenerozov/zams_tidal_coupling/blob/master/tc1.png?raw=true)
+![tc1](tc1.png?raw=true)
 
 [tc2](https://github.com/alekseygenerozov/zams_tidal_coupling/blob/master/tc2.png)
 
