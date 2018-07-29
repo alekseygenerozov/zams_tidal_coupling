@@ -6,9 +6,9 @@ Note that Press&Teukolsky implicitly assume that the star is on a parabolic orbi
 
 The two plots below show how the tidal coupling constants vary with stellar mass. For comparison, I also plot the tidal coupling constants for n=3 and n=3/2 polytropes as dash-dotted, green lines.
 
-[!image](https://github.com/alekseygenerozov/zams_tidal_coupling/blob/master/tc1.png)
+[!tc1](https://github.com/alekseygenerozov/zams_tidal_coupling/blob/master/tc1.png)
 
-(https://github.com/alekseygenerozov/zams_tidal_coupling/blob/master/tc2.png)
+[!tc2](https://github.com/alekseygenerozov/zams_tidal_coupling/blob/master/tc2.png)
 
 #Validation
 The tidal coupling constants are robust to variations in the numerical resolution of the stellar model (i.e. decreasing mesh_delta_coeff to 0.2). 
@@ -26,10 +26,10 @@ where rho is the stellar denstiy; all masses and lengths are in units of the ste
 For high mass stars (>~2 solar masses), the overlap integrals does not vary smoothly between successive modes.  
 
 20 Msun (overlap integral vs. mode frequency)
-(https://github.com/alekseygenerozov/zams_tidal_coupling/prob1.png)
+[prob1](https://github.com/alekseygenerozov/zams_tidal_coupling/prob1.png)
 
 100 Msun (overlap integral vs. mode frequency)
-(https://github.com/alekseygenerozov/zams_tidal_coupling/prob2.png)
+[prob2](https://github.com/alekseygenerozov/zams_tidal_coupling/prob2.png)
 
 
 
