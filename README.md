@@ -11,7 +11,7 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 [!tc2](https://github.com/alekseygenerozov/zams_tidal_coupling/blob/master/tc2.png)
 
 #Validation
-The tidal coupling constants are robust to variations in the numerical resolution of the stellar model (i.e. decreasing mesh_delta_coeff to 0.2). 
+Tidal coupling constants are robust to changes in the numerical grid. Decreasing mesh_delta_coeff to 0.2 (which increases the number of grid points by a factor of a few), changes the tidal coupling constant by at most ~10%.
 
 The overlap integrals have to satisfy the following summation rule:
 
