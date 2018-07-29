@@ -17,14 +17,14 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 2) The overlap integrals have to satisfy the following summation rule:<br/>
   <img src="https://latex.codecogs.com/gif.latex?\Sigma\,Q^2=10\int_{0}^1\rho(r)r^4dr" />. <br/>
   Rho is the stellar density and the sum on the left-hand side is over all of the modes.
-  This summation is satisfied within 2% (and the agreement is often much better, especially for sub-solar models;    error_sum.csv enumerates the errors for all of the models).<br/>
+  This summation is satisfied within 2% (and the agreement is often much better, especially for sub-solar models;    error_sum.csv enumerates the fractional disagreement for all masses).<br/>
  
 
 **Potential issues**
 
-For high mass stars (>~2 solar masses), the overlap integrals does not vary smoothly between successive modes.  
+For high mass stars (>~2 solar masses), the overlap integrals do not vary smoothly between consecutive, low frequency modes. 
 
-20 Msun (overlap integral vs. mode frequency). The oscillations in the overlap integral are insensitive to the resolution. Also tried different treatments of the convective/radiative boundary in MESA (conv_bdy_mix_softening_f0 = 0.003, conv_bdy_mix_softening_f = 0.001, conv_bdy_mix_softening_min_D_mix = 0).
+20 Msun (overlap integral vs. mode frequency). The oscillations in the overlap integral are insensitive to the resolution. Also tried different treatments of the convective/radiative boundary in MESA (conv_bdy_mix_softening_f0 = 0.003, conv_bdy_mix_softening_f = 0.001, conv_bdy_mix_softening_min_D_mix = 0), but this has no effect
 
 ![prob3](prob3.png?raw=true)
 
