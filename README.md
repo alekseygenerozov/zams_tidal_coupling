@@ -27,10 +27,10 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 For high mass stars (>~2 solar masses), the overlap integrals does not vary smoothly between successive modes.  
 
 20 Msun (overlap integral vs. mode frequency)
-![prob1](prob1.png?raw=true)
+![prob3](prob3.png?raw=true)
 
 100 Msun (overlap integral vs. mode frequency)
-![prob2](prob2.png?raw=true)
+![prob4](prob4.png?raw=true)
 
 
 
