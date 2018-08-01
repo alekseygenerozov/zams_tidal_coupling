@@ -24,7 +24,7 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 
 For high mass stars (>~2 solar masses), the overlap integrals do not vary smoothly between consecutive, low frequency modes. 
 
-20 Msun (overlap integral vs. mode frequency). The oscillations in the overlap integral are insensitive to the resolution. Also tried different treatments of the convective/radiative boundary in MESA (conv_bdy_mix_softening_f0 = 0.003, conv_bdy_mix_softening_f = 0.001, conv_bdy_mix_softening_min_D_mix = 0), but this has no effect
+20 Msun (overlap integral vs. mode frequency). The oscillations in the overlap integral are insensitive to the resolution. Also tried different treatments of the convective/radiative boundary in MESA (conv_bdy_mix_softening_f0 = 0.003, conv_bdy_mix_softening_f = 0.001, conv_bdy_mix_softening_min_D_mix = 0), but this has no effect. Finally I tried varying the grid parameters in the GYRE inlist (e.g. chaning alpha_osc from 10 to 100), but the oscillations remain.
 
 ![prob3](prob3.png?raw=true)
 
