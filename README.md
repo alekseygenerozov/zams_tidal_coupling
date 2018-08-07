@@ -2,7 +2,7 @@
 
 T_[mass].csv: Tabulated (l=2 and 3) tidal coupling constants for ZAMS, solar metallicity stars between 0.1 and 100 solar masses. We follow the formalism of Press&Teukolsky 1977 (see also Lee&Ostriker 1986), and simply recalculate their overlap integrals (eq. 38 in Press & Teukolsky) using MESA models and the GYRE stellar oscillation code (v. 9793 and 5.0 respectively; sample in-lists are included in the repo). Each file contains two columns: the left column is eta, and the right column is the tidal coupling constant. The masses in the grid are listed in masses.txt.
 
-Note that Press&Teukolsky implicitly assume that the star is on a parabolic orbit. 
+Note that Press&Teukolsky (PT) implicitly assume that the star is on a parabolic orbit. 
 
 The two plots below show how the tidal coupling constants vary with stellar mass. For comparison, I also plot the tidal coupling constants for n=3 and n=3/2 polytropes as dash-dotted, green lines.
 
@@ -22,9 +22,10 @@ The two plots below show how the tidal coupling constants vary with stellar mass
   
 3) For higher order g-modes (g3 and beyond), we use the following expression for the overlap integral 
 (see eq. 78 in Ivanov et al. 2013).<br/>
-<img src="https://latex.codecogs.com/gif.latex?Q%3D%5Comega%5E2%5Cint%5C%2Cdr%5Crho%5C%2Cr%5E%7Bl&plus;2%7D%5Cleft%5B%5Cfrac%7B%5Cxi_r%28r%29%7D%7Bg%7D&plus;%5Cfrac%7B%5Cxi_t%28r%29%7D%7Br%5E%7B%5Cell&plus;1%7D%7D%20%5Cleft%28%5Cfrac%7Br%5E%7B%5Cell&plus;2%7D%7D%7Bg%7D%5Cright%29%27%5Cright%5D" /, (a)<br/>
-where xi_r and xi_t are the radial and tangential components of the normal mode, rho is the stellar density, omega is the frequency, and g is the local gravitational acceleration. Equation a is more numerically stable than the standard expression from Press&Teukolsky, as the integrand is less oscillatory. (However, this expression does assume the Cowling approximation).<br/>
-The plot below shows the overlap integrals of higher order g modes from the standard PT integral (red), and from equation a above (black). Note that as the resolution of the stellar model is increase the result of the PT integral approaches that from equation a.
+<img src="https://latex.codecogs.com/gif.latex?Q%3D%5Comega%5E2%5Cint%5C%2Cdr%5Crho%5C%2Cr%5E%7Bl&plus;2%7D%5Cleft%5B%5Cfrac%7B%5Cxi_r%28r%29%7D%7Bg%7D&plus;%5Cfrac%7B%5Cxi_t%28r%29%7D%7Br%5E%7B%5Cell&plus;1%7D%7D%20%5Cleft%28%5Cfrac%7Br%5E%7B%5Cell&plus;2%7D%7D%7Bg%7D%5Cright%29%27%5Cright%5D" />, (a)<br/>
+xi_r and xi_t are the radial and tangential components of the normal mode, rho is the stellar density, omega is the frequency, and g is the local gravitational acceleration. Equation a is more numerically stable than the standard expression from PT, as the integrand is less oscillatory. (However, this expression does assume the Cowling approximation).<br/>
+The plot below shows the overlap integrals of higher order g modes from the standard PT integral (red), and from equation a above (black). Equation a gives consistent results between our high and low resolution runs. The PT integral is badly behaved for the low frequences, and depends more strongly on the resolution of the stellar model. 
+As the resolution is increased it becomes more consistent with equation a. 
 
 **Potential issues**
 
