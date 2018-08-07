@@ -24,8 +24,10 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 (see eq. 78 in Ivanov et al. 2013).<br/>
 <img src="https://latex.codecogs.com/gif.latex?Q%3D%5Comega%5E2%5Cint%5C%2Cdr%5Crho%5C%2Cr%5E%7Bl&plus;2%7D%5Cleft%5B%5Cfrac%7B%5Cxi_r%28r%29%7D%7Bg%7D&plus;%5Cfrac%7B%5Cxi_t%28r%29%7D%7Br%5E%7B%5Cell&plus;1%7D%7D%20%5Cleft%28%5Cfrac%7Br%5E%7B%5Cell&plus;2%7D%7D%7Bg%7D%5Cright%29%27%5Cright%5D" />, (a)<br/>
 xi_r and xi_t are the radial and tangential components of the normal mode, omega is its frequency, rho is the stellar density, and g is the local gravitational acceleration. Equation a is more numerically stable than the standard expression from PT, as the integrand is less oscillatory. (However, this expression does assume the Cowling approximation).<br/>
-The plot below shows the overlap integrals of higher order g modes from the standard PT integral (red), and from equation a above (black). Equation a gives consistent results between our high and low resolution runs. The PT integral is badly behaved for the low frequences, and depends more strongly on the resolution of the stellar model. 
+The plot below shows the overlap integrals of higher order g modes from the standard PT integral (red), and from equation a above (black). Equation a gives consistent results between our high and low resolution runs. The PT integral is badly behaved for low frequences, and depends more strongly on the resolution of the stellar model. 
 As the resolution is increased it becomes more consistent with equation a. 
+
+![conv](conv.png?raw=true)
 
 **Potential issues**
 
