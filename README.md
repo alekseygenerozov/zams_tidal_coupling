@@ -13,8 +13,8 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 
 **Validation and numerics**
 
-1) Tidal coupling constants are robust to changes in the spatial grid in MESA. For our models we set mesh_delta_coeff=0.2. Using MESA's default grid (which reduces the number of grid points by a factor of a few), changes the tidal coupling constants by at most 10% (the only exception is 1.3 solar masses, but further checks at intermediate grid sizes indicate that the high resolution run is converged). <br/>
-There are between 650 and 1000 grid points in the lower resolution runs, and between 2500 and 5000 grid points in the higher resolution runs. 
+1) Tidal coupling constants are robust to changes in the spatial grid in MESA. For our models we set mesh_delta_coeff=0.2. Using MESA's default grid (which reduces the number of grid points by a factor of a few), changes the tidal coupling constants by at most 10% (the only exception is 1.3 solar masses, but further checks at intermediate grid sizes indicate that the high resolution run is converged). <br />
+There are between 650 and 1000 grid points in our lower resolution runs, and between 2500 and 5000 grid points in our high resolution runs. 
 
 2) The overlap integrals have to satisfy the following summation rule:<br/>
   <img src="https://latex.codecogs.com/gif.latex?\Sigma\,Q^2=\ell(2\ell+1)\int_{0}^1\rho(r)r^{2\ell}dr" />. <br/>
@@ -22,9 +22,9 @@ There are between 650 and 1000 grid points in the lower resolution runs, and bet
   This summation is satisfied within 3% (and the agreement is often much better, especially for sub-solar models;       error_sum.csv enumerates the fractional disagreement for all masses). The second column and third columns are the the percent errors for the l=2 and l=3 modes.<br/>
   
 3) For higher order g-modes (g3 and beyond), we use the following equation for the overlap integral 
-(see eq. 78 in [Ivanov et al. 2013](https://ui.adsabs.harvard.edu/#abs/2013MNRAS.432.2339I/abstract).<br/>
+(see eq. 78 in [Ivanov et al. 2013](https://ui.adsabs.harvard.edu/#abs/2013MNRAS.432.2339I/abstract).<br />
 <img src="https://latex.codecogs.com/gif.latex?Q%3D%5Comega%5E2%5Cint%5C%2Cdr%5Crho%5C%2Cr%5E%7Bl&plus;2%7D%5Cleft%5B%5Cfrac%7B%5Cxi_r%28r%29%7D%7Bg%7D&plus;%5Cfrac%7B%5Cxi_t%28r%29%7D%7Br%5E%7B%5Cell&plus;1%7D%7D%20%5Cleft%28%5Cfrac%7Br%5E%7B%5Cell&plus;2%7D%7D%7Bg%7D%5Cright%29%27%5Cright%5D" />, (a)<br/>
-xi_r and xi_t are the radial and tangential components of the normal mode, omega is its frequency, rho is the stellar density, and g is the local gravitational acceleration. Equation a is more numerically stable than the standard expression from PT, as the integrand is less oscillatory. (However, equation does assumes the Cowling approximation, which neglects variations in the stellar potential. So this expression cannot be used for all modes).<br/>
+xi_r and xi_t are the radial and tangential components of the normal mode, omega is its frequency, rho is the stellar density, and g is the local gravitational acceleration. Equation a is more numerically stable than the standard expression from PT, as the integrand is less oscillatory. (However, equation does assumes the Cowling approximation, which neglects variations in the stellar potential. So this expression cannot be used for all modes).<br />
 The plot below shows the overlap integrals of the g3, g4, g5,... modes in our 1 solar mass models. The red points are calculated using the standard PT integral, while the black points are calculating using equation a. The latter do not depend on the resolution of the stellar model, while the former does. As the resolution is increased, the two formulations of the overlap integral converge.<br/>
 
 ![conv](conv.png?raw=true)
