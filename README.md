@@ -25,7 +25,7 @@ There are between 650 and 1000 grid points in the lower resolution runs, and bet
 (see eq. 78 in Ivanov et al. 2013).<br/>
 <img src="https://latex.codecogs.com/gif.latex?Q%3D%5Comega%5E2%5Cint%5C%2Cdr%5Crho%5C%2Cr%5E%7Bl&plus;2%7D%5Cleft%5B%5Cfrac%7B%5Cxi_r%28r%29%7D%7Bg%7D&plus;%5Cfrac%7B%5Cxi_t%28r%29%7D%7Br%5E%7B%5Cell&plus;1%7D%7D%20%5Cleft%28%5Cfrac%7Br%5E%7B%5Cell&plus;2%7D%7D%7Bg%7D%5Cright%29%27%5Cright%5D" />, (a)<br/>
 xi_r and xi_t are the radial and tangential components of the normal mode, omega is its frequency, rho is the stellar density, and g is the local gravitational acceleration. Equation a is more numerically stable than the standard expression from PT, as the integrand is less oscillatory. (However, equation does assume the Cowling approximation, which neglects variations in the stellar potential. So this expression cannot be used for all modes).<br/>
-The plot below shows the overlap integrals of (n>=3) g modes in our 1 solar mass models. The red points are calculated using the standard PT integral, while the black points are calculating using equation a. The latter do not depend on the resolution of the stellar model, while the former is more sensitive to the resolution. As the resolution is increased, the two formulations of the overlap integral converge.<br/>
+The plot below shows the overlap integrals of the g3, g4, g5,... modes in our 1 solar mass models. The red points are calculated using the standard PT integral, while the black points are calculating using equation a. The latter do not depend on the resolution of the stellar model, while the former does. As the resolution is increased, the two formulations of the overlap integral converge.<br/>
 
 ![conv](conv.png?raw=true)
 
