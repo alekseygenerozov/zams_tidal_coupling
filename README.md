@@ -19,6 +19,13 @@ The two plots below show how the tidal coupling constants vary with stellar mass
   <img src="https://latex.codecogs.com/gif.latex?\Sigma\,Q^2=\ell(2\ell+1)\int_{0}^1\rho(r)r^{2\ell}dr" />. <br/>
   Rho is the stellar density and the sum on the left-hand side is over all of the modes.
   This summation is satisfied within 3% (and the agreement is often much better, especially for sub-solar models;       error_sum.csv enumerates the fractional disagreement for all masses). The second column and third columns are the the percent errors for the l=2 and l=3 modes.<br/>
+  
+3) For higher order g-modes (g3 and beyond), we use the following alternative formulation of the overlap integral 
+(see eq. 78 in Ivanov et al. 2013).
+
+<img src="https://latex.codecogs.com/gif.latex?Q=\omega^2\intdr\rho\,r^{l+2}\left[\frac{\xi_r(r)}{g}+\frac{\xi_t(r)}{r^{\ell+1}} \left(\frac{r^{\ell+2}}{g}\right)'\right]" />
+
+This expression is more numerically stable (although it does assume the Cowling approximation). For example, 
  
 
 **Potential issues**
