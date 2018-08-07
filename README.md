@@ -1,6 +1,6 @@
 # zams_tidal_coupling
 
-T_[mass].csv: Tabulated (l=2 and 4) tidal coupling constants for ZAMS, solar metallicity stars between 0.1 and 100 solar masses. We follow the formalism of Press&Teukolsky 1977 (see also Lee&Ostriker 1986), and simply recalculate their overlap integrals (eq. 38 in Press & Teukolsky) using MESA models and the GYRE stellar oscillation code (v. 9793 and 5.0 respectively; sample in-lists are included in the repo). Each file contains two columns: the left column is eta, and the right column is the tidal coupling constant. The masses in the grid are listed in masses.txt.
+T_[mass].csv: Tabulated (l=2 and 3) tidal coupling constants for ZAMS, solar metallicity stars between 0.1 and 100 solar masses. We follow the formalism of Press&Teukolsky 1977 (see also Lee&Ostriker 1986), and simply recalculate their overlap integrals (eq. 38 in Press & Teukolsky) using MESA models and the GYRE stellar oscillation code (v. 9793 and 5.0 respectively; sample in-lists are included in the repo). Each file contains two columns: the left column is eta, and the right column is the tidal coupling constant. The masses in the grid are listed in masses.txt.
 
 Note that Press&Teukolsky implicitly assume that the star is on a parabolic orbit. 
 
@@ -13,7 +13,7 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 
 **Validation**
 
-1) Tidal coupling constants are robust to changes in the spatial grid in MESA. For our models we set mesh_delta_coeff=0.2. Using MESA's default grid (which reduces the number of grid points by a factor of a few), changes the tidal coupling constants by at most 10%. 
+1) Tidal coupling constants are robust to changes in the spatial grid in MESA. For our models we set mesh_delta_coeff=0.2. Using MESA's default grid (which reduces the number of grid points by a factor of a few), changes the tidal coupling constants by at most 10% (the only exception is 1.3 solar masses, but further checks at intermediate grid sizes suggest that the high resolution run is converged).  
 
 2) The overlap integrals have to satisfy the following summation rule:<br/>
   <img src="https://latex.codecogs.com/gif.latex?\Sigma\,Q^2=\ell(2\ell+1)\int_{0}^1\rho(r)r^{2\ell}dr" />. <br/>
