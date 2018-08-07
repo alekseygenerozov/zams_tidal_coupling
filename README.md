@@ -20,13 +20,11 @@ The two plots below show how the tidal coupling constants vary with stellar mass
   Rho is the stellar density and the sum on the left-hand side is over all of the modes.
   This summation is satisfied within 3% (and the agreement is often much better, especially for sub-solar models;       error_sum.csv enumerates the fractional disagreement for all masses). The second column and third columns are the the percent errors for the l=2 and l=3 modes.<br/>
   
-3) For higher order g-modes (g3 and beyond), we use the following alternative formulation of the overlap integral 
-(see eq. 78 in Ivanov et al. 2013).
-
-<img src="https://latex.codecogs.com/gif.latex?Q%3D%5Comega%5E2%5Cint%5C%2Cdr%5Crho%5C%2Cr%5E%7Bl&plus;2%7D%5Cleft%5B%5Cfrac%7B%5Cxi_r%28r%29%7D%7Bg%7D&plus;%5Cfrac%7B%5Cxi_t%28r%29%7D%7Br%5E%7B%5Cell&plus;1%7D%7D%20%5Cleft%28%5Cfrac%7Br%5E%7B%5Cell&plus;2%7D%7D%7Bg%7D%5Cright%29%27%5Cright%5D" />
-
-This expression is more numerically stable (although it does assume the Cowling approximation). For example, 
- 
+3) For higher order g-modes (g3 and beyond), we use the following expression for the overlap integral 
+(see eq. 78 in Ivanov et al. 2013).<br/>
+<img src="https://latex.codecogs.com/gif.latex?Q%3D%5Comega%5E2%5Cint%5C%2Cdr%5Crho%5C%2Cr%5E%7Bl&plus;2%7D%5Cleft%5B%5Cfrac%7B%5Cxi_r%28r%29%7D%7Bg%7D&plus;%5Cfrac%7B%5Cxi_t%28r%29%7D%7Br%5E%7B%5Cell&plus;1%7D%7D%20%5Cleft%28%5Cfrac%7Br%5E%7B%5Cell&plus;2%7D%7D%7Bg%7D%5Cright%29%27%5Cright%5D" /, (a)<br/>
+where xi_r and xi_t are the radial and tangential components of the normal mode, rho is the stellar density, omega is the frequency, and g is the local gravitational acceleration. Equation a is more numerically stable than the standard expression from Press&Teukolsky, as the integrand is less oscillatory. (However, this expression does assume the Cowling approximation).<br/>
+The plot below shows the overlap integrals of higher order g modes from the standard PT integral (red), and from equation a above (black). Note that as the resolution of the stellar model is increase the result of the PT integral approaches that from equation a.
 
 **Potential issues**
 
