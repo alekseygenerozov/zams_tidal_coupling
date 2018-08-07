@@ -23,7 +23,7 @@ The two plots below show how the tidal coupling constants vary with stellar mass
 3) For higher order g-modes (g3 and beyond), we use the following alternative formulation of the overlap integral 
 (see eq. 78 in Ivanov et al. 2013).
 
-<img src="https://latex.codecogs.com/gif.latex?Q=\omega^2\intdr\rho\,r^{l+2}\left[\frac{\xi_r(r){g}+\frac{\xi_t(r)}{r^{\ell+1}} \left(\frac{r^{\ell+2}}{g}\right)'\right]" />
+<img src="https://latex.codecogs.com/gif.latex?Q=\omega^2\int\,dr\rho\,r^{l+2}\left[\frac{\xi_r(r)}{g}+\frac{\xi_t(r)}{r^{\ell+1}} \left(\frac{r^{\ell+2}}{g}\right)'\right]" />
 
 This expression is more numerically stable (although it does assume the Cowling approximation). For example, 
  
