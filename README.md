@@ -1,6 +1,18 @@
 # zams_tidal_coupling
 
-T_[mass]_l[23].csv: Tabulated (l=2 and 3) tidal coupling constants for ZAMS, solar metallicity stars between 0.1 and 100 solar masses. We follow the formalism of Press&Teukolsky 1977 (see also Lee&Ostriker 1986), and simply recalculate their overlap integrals (eq. 38 in Press & Teukolsky) using MESA models and the GYRE stellar oscillation code (v. 9793 and 5.0 respectively; sample in-lists are included in the repo). Each file contains two columns: the left column is eta, and the right column is the tidal coupling constant. The masses in the grid are listed in masses.txt.
+T_[mass]_l[23].csv: Tabulated (l=2 and 3) tidal coupling constants for ZAMS, solar metallicity stars between 0.1 and 100 solar masses. We follow the formalism of Press&Teukolsky 1977 (see also Lee&Ostriker 1986), and simply recalculate their overlap integrals (eq. 38 in Press & Teukolsky) using MESA models and the GYRE stellar oscillation code (v. 9793 and 5.0 respectively; sample in-lists are included in the repo). Each file contains two columns: the left column is eta, and the right column is the tidal coupling constant. The masses in the grid are listed in masses.txt. 
+
+T_[mass]_z0.001_l[23].csv: Same as above except for a metallicity of 0.001. 
+
+T_grid.h5: hdf5 file containing all of the tabulated data. Example python code to obtain l=2 tidal coupling constant for 10 solar mass, solar metallicity (Z=0.02) star. 
+
+```
+import h5py
+f=h5py.File('T_grid.h5')
+MM=10
+f['{0}_0.02_2'.format(MM)][...]
+```
+
 
 Note that Press&Teukolsky (PT) implicitly assume that the star is on a parabolic orbit. 
 
